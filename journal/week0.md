@@ -20,6 +20,55 @@ It is always seen in a practice that people prefer or end up using a combination
 
 ![image](https://user-images.githubusercontent.com/54937605/221245937-bc68234d-af29-40f8-9c0e-bd716bd584b8.png)
 
+## Create IAM User
+
+Under this section I'm going to: 
+- Create an IAM user and add him to appropriate group 
+- Generate the secure key for console and CLI access
+- Set an alias for AWS account
+
+So, let's get started.
+
+Navigate to IAM service page/section and choose IAM --> Users --> Add users
+
+![image](https://user-images.githubusercontent.com/54937605/221251201-50d766cf-679f-4bb2-895e-871ce0d02372.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221251423-04ea4955-120a-4341-8479-b62c591cc5d9.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221251505-9d949fd2-df49-46be-b159-e1f87dd44886.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221251661-d9f246fa-42d8-4e68-89d0-e4c782bc4482.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221251742-6b799bf1-9021-48a2-8e3b-508b6e3a1491.png)
+
+Once you hit the "Create User" button… 
+
+![image](https://user-images.githubusercontent.com/54937605/221251834-23163adb-5b6d-4ce8-b537-c7e82a5371d8.png)
+
+Next I'm creating an alias for my AWS account 
+
+![image](https://user-images.githubusercontent.com/54937605/221252077-076352f8-d3f8-4d8d-956c-ce2e8aa528ec.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221252144-97d1f002-6970-433f-9fe3-9c78d7d7f9e0.png)
+
+Alrighty! It's time to check if we can login using newly created IAM user
+
+![image](https://user-images.githubusercontent.com/54937605/221252353-59fad731-c4af-41f7-a8eb-8369d6653744.png)
+
+![image](https://user-images.githubusercontent.com/54937605/221252408-f176b37e-2b5d-4e83-9de8-d1422bb41324.png)
+
+We are in ! :fortune_cookie:  So far all okay and now it's time to generate our secure access key for IAM user we logged in with. In order to do that go to IAM and click on "User"  select the user and click on tab "Security Credentials" and select "Access Keys"
+
+![image](https://user-images.githubusercontent.com/54937605/221253579-24cc1dbf-dd5c-4368-a0d4-3632c2dc134a.png)
+
+__NOTE: Download the CSV having your access key & secret. Keep it safe!__
+
+![image](https://user-images.githubusercontent.com/54937605/221253660-a38622fd-d638-4d78-875f-0f28fde19ce7.png)
+
+Let's also give it a shot at AWS CloudShell & see things works well for you. 
+
+![image](https://user-images.githubusercontent.com/54937605/221254091-2190a4cf-f892-4f20-8ce0-ba0552718731.png)
+
 ## Installing and Configuring the AWS CLI on gitpod
 
 Define following task under ".gitpod.yml" file
